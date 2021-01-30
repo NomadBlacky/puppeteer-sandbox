@@ -1,7 +1,7 @@
 const { TypeScriptAppProject } = require('projen');
 
 const project = new TypeScriptAppProject({
-  jsiiFqn: "projen.TypeScriptAppProject",
+  jsiiFqn: 'projen.TypeScriptAppProject',
   name: 'puppeteer-sandbox',
 
   /* NodePackageOptions */
@@ -47,7 +47,9 @@ const project = new TypeScriptAppProject({
   // defaultReleaseBranch: 'master',                                           /* The name of the main release branch. */
   // dependabot: true,                                                         /* Include dependabot configuration. */
   // dependabotOptions: undefined,                                             /* Options for dependabot. */
-  // gitignore: undefined,                                                     /* Additional entries to .gitignore. */
+  gitignore: [                                                                 /* Additional entries to .gitignore. */
+    "example.png"
+  ],
   // jest: true,                                                               /* Setup jest unit tests. */
   // jestOptions: undefined,                                                   /* Jest options. */
   // mergify: true,                                                            /* Adds mergify configuration. */

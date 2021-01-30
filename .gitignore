@@ -16,6 +16,7 @@
 /test-reports/
 build/Release
 coverage
+example.png
 jspm_packages/
 junit.xml
 lerna-debug.log*
